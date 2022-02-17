@@ -237,11 +237,6 @@ function App() {
               }}
             >
               <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  Welcome to EthLlamas
-              </s.TextTitle>
-              <s.TextTitle
               style={{
                 textAlign: "center",
                 fontSize: 50,
@@ -251,6 +246,12 @@ function App() {
             >
               COMING SOON!
               </s.TextTitle>
+              <s.TextTitle
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  New NFT collection of 10,000 unique llamas living on the Ethereum blockchain.
+              </s.TextTitle>
+              <a href="https://twitter.com/EthLlamasNFT"><img src="/config/images/twitter.png"></img></a>
             </s.Container>
             <s.SpacerLarge />
             <s.Container flex={1} jc={"center"} ai={"center"}>
