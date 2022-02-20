@@ -65,6 +65,14 @@ export const ContainerThin = styled.div`
   background-position: center;
 `;
 
+export const ContainerNav = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const TextTitle = styled.p`
   color: var(--primary-text);
   font-size: 26.4px;

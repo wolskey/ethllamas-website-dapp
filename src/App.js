@@ -8,6 +8,7 @@ import styled from "styled-components";
 import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown';
 import BootstrapNavbar from "./components/Navbar.js";
+import { ListGroup,Container,Navbar,Nav,NavItem,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -243,6 +244,23 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
+
+      {/* NavBar */}          
+      <s.ContainerNav
+        style={{
+          padding: 0,
+        }}
+      >
+        <a href=""><img width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></a>
+        <s.SpacerSmall />
+        <a href=""><img width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img></a>
+        <s.SpacerSmall />
+        <a href=""><img width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></a>
+        <s.SpacerSmall />
+        <a href="https://twitter.com/EthLlamasNFT"><img width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
+      </s.ContainerNav>
+           
+      {/* Top Logo */}
       <s.Container
         ai={"center"}
       >
