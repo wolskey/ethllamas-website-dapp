@@ -7,7 +7,7 @@ import styled from "styled-components";
 // import React from 'react';
 import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown';
-import Navbar from "./components/Navbar.js";
+import BootstrapNavbar from "./components/Navbar.js";
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -221,7 +221,19 @@ function App() {
     getData();
   }, [blockchain.account]);
 
-  const Completionist = () => <span>You are good to go!</span>;
+  // For countdown timer
+  const Completionist = () => <span>Mint is preparing to go live!</span>;
+
+  // Renderer callback with condition
+  const renderer = ({ days, hours, minutes, seconds, completed }) => {
+    if (completed) {
+      // Render a completed state
+      return <Completionist />;
+    } else {
+      // Render a countdown
+      return <span>Minting in {days} days {hours}h {minutes}m {seconds}s</span>;
+    }
+  };
 
   return (
     <s.Screen>
@@ -264,29 +276,24 @@ function App() {
             <s.TextDescription
               style={{ textAlign: "center", color: "var(--primary-text)" }}
             >
-              New NFT collection of 10,000 unique llamas living on the Ethereum blockchain. Creating an open and inclusive community and DAO.
+              EthLlamas is an NFT collection of 10,000 unique hand drawn llamas living on the Ethereum blockchain whose purpose is to create an open and inclusive community and DAO.
             </s.TextDescription>
           </s.ContainerThinner>
           <s.SpacerSmall />
           <a href="https://twitter.com/EthLlamasNFT"><img width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
           <s.SpacerSmall />
-          <s.TextTitle
-            style={{ textAlign: "center", color: "var(--secondary-text)" }}
-          >
-            Mint Date TBA Soon!
-          </s.TextTitle>
-          {/* <s.TextTitle
+          <s.TextSubTitle
           style={{
             textAlign: "center",
-            fontSize: 50,
-            fontWeight: "bold",
-            color: "var(--accent-text)",
+            fontSize: 40,
+            color: "var(--secondary-text)",
           }}
         >
-          <Countdown date='2022-03-01T10:00:00-06:00'>
-            <Completionist />
-          </Countdown>
-          </s.TextTitle> */}
+          <Countdown
+           date='2022-03-05T11:00:00-06:00'
+           renderer={renderer}
+          />
+          </s.TextSubTitle>
       </s.ContainerThin>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -316,13 +323,7 @@ function App() {
               style={{ textAlign: "center", color: "var(--primary-text)" }}
             >
               Be part of a DOA in control of a community wallet funded by EthLlama NFT sales and worth up to 350 Eth.
-            </s.TextDescription>
-          </s.ContainerThinner>
-          <s.SpacerSmall />
-          <s.ContainerThinner>
-            <s.TextDescription
-              style={{ textAlign: "center", color: "var(--primary-text)" }}
-            >
+              <s.SpacerSmall />
               Join an inclusive community of artists and developers who can help support each other and their projects.
             </s.TextDescription>
           </s.ContainerThinner>
@@ -357,7 +358,7 @@ function App() {
             color: "var(--primary-text)",
           }}
         >
-          So How Much?
+          So, How Much?
           </s.TextTitle>
           <s.SpacerSmall />
           <s.ContainerThinner>
@@ -365,13 +366,7 @@ function App() {
               style={{ textAlign: "center", color: "var(--primary-text)" }}
             >
               EthLlamas NFTs are 0.05 ETH each to mint, with a 20 mint limit.
-            </s.TextDescription>
-          </s.ContainerThinner>
-          <s.SpacerSmall />
-          <s.ContainerThinner>
-            <s.TextDescription
-              style={{ textAlign: "center", color: "var(--primary-text)" }}
-            >
+              <s.SpacerSmall />
               Proceeds will be shared, with 70% going to a community wallet to be controlled by the DAO, and 30% going to the EthLlamas team to promote and build out the project.
             </s.TextDescription>
           </s.ContainerThinner>
@@ -404,7 +399,9 @@ function App() {
             <s.TextDescription
               style={{ textAlign: "center", color: "var(--primary-text)" }}
             >
-              We want to grow a community of positivity and inclusiveness, where artists, devs, and collectors can come together to talk and help each other. Join the Discord, opening up soon! 
+              We want to grow a community of positivity and inclusiveness, where artists, devs, and collectors can come together to talk and help each other.
+              <s.SpacerSmall />
+              Join the Discord, opening soon! 
             </s.TextDescription>
           </s.ContainerThinner>
           <s.SpacerSmall />
@@ -443,11 +440,13 @@ function App() {
           </s.Container>
           <s.SpacerSmall />
           <s.ContainerThinner>
-            <s.TextDescription
+            <s.TextSubTitle
               style={{ textAlign: "center", color: "var(--primary-text)" }}
             >
-              Empulse (Eric) is a Site Reliability Engineer, software developer, amateur artist, and creator of EthLlamas.
-            </s.TextDescription>
+              @Empulse_NFT
+              <s.SpacerXSmall />
+              Eric is a Site Reliability Engineer, software developer, amateur artist, and creator of EthLlamas.
+            </s.TextSubTitle>
           </s.ContainerThinner>
           <s.SpacerSmall />
           <a href="https://twitter.com/empulse_nft"><img width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
@@ -482,6 +481,8 @@ function App() {
               style={{ textAlign: "center", color: "var(--primary-text)" }}
             >
               We aim to give back to the Open Source community by making all code for the smart contracts, website, and DAPP available publicly on github.com.
+              <s.SpacerSmall />
+              We hope this helps other artists and developers in the space launch their projects or allows others to contribute to EthLlamas.
             </s.TextDescription>
           </s.ContainerThinner>
           <s.SpacerLarge />

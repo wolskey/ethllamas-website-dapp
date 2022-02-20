@@ -58,7 +58,7 @@ export const ContainerThin = styled.div`
   justify-content: ${({ jc }) => (jc ? jc : "flex-start")};
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
-  width: 50%;
+  width: 100%;
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
@@ -71,7 +71,7 @@ export const ContainerThinner = styled.div`
   justify-content: ${({ jc }) => (jc ? jc : "flex-start")};
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
-  width: 90%;
+  width: 500px;
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
