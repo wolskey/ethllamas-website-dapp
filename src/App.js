@@ -7,6 +7,7 @@ import styled from "styled-components";
 // import React from 'react';
 import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown';
+import Navbar from "./components/Navbar.js";
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -88,7 +89,7 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
+  border: 0px dashed var(--secondary);
   background-color: var(--accent);
   border-radius: 10%;
   width: 200px;
@@ -97,6 +98,21 @@ export const StyledImg = styled.img`
   }
   @media (min-width: 1000px) {
     width: 300px;
+  }
+  transition: width 0.5s;
+`;
+
+export const ProfileImg = styled.img`
+  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
+  border: 0px dashed var(--secondary);
+  background-color: var(--accent);
+  border-radius: 10%;
+  width: 150px;
+  @media (min-width: 900px) {
+    width: 150;
+  }
+  @media (min-width: 1000px) {
+    width: 150;
   }
   transition: width 0.5s;
 `;
@@ -215,11 +231,267 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
+      <s.Container
+        ai={"center"}
+      >
         <a href={CONFIG.MARKETPLACE_LINK}>
-          <StyledLargeLogo alt={"logo"} src={"/config/images/logo.png"} />
+          <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         </a>
-        <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+      </s.Container>
+      <s.SpacerSmall />
+
+      {/* Welcome */}
+      <s.ContainerThin
+          flex={0}
+          jc={"center"}
+          ai={"center"}
+          style={{
+            backgroundColor: "var(--primary)",
+          }}
+        >
+        <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 50,
+            fontWeight: "bold",
+            color: "var(--primary-text)",
+          }}
+        >
+          Welcome to EthLlamas
+          </s.TextTitle>
+          <s.SpacerSmall />
+          <s.ContainerThinner>
+            <s.TextDescription
+              style={{ textAlign: "center", color: "var(--primary-text)" }}
+            >
+              New NFT collection of 10,000 unique llamas living on the Ethereum blockchain. Creating an open and inclusive community and DAO.
+            </s.TextDescription>
+          </s.ContainerThinner>
+          <s.SpacerSmall />
+          <a href="https://twitter.com/EthLlamasNFT"><img width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
+          <s.SpacerSmall />
+          <s.TextTitle
+            style={{ textAlign: "center", color: "var(--secondary-text)" }}
+          >
+            Mint Date TBA Soon!
+          </s.TextTitle>
+          {/* <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 50,
+            fontWeight: "bold",
+            color: "var(--accent-text)",
+          }}
+        >
+          <Countdown date='2022-03-01T10:00:00-06:00'>
+            <Completionist />
+          </Countdown>
+          </s.TextTitle> */}
+      </s.ContainerThin>
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+
+      {/* Why Buy */}
+      <s.ContainerThin
+          flex={0}
+          jc={"center"}
+          ai={"center"}
+          style={{
+            backgroundColor: "var(--primary)",
+          }}
+        >
+        <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 50,
+            fontWeight: "bold",
+            color: "var(--primary-text)",
+          }}
+        >
+          Why Buy an EthLlamas NFT?
+          </s.TextTitle>
+          <s.SpacerSmall />
+          <s.ContainerThinner>
+            <s.TextDescription
+              style={{ textAlign: "center", color: "var(--primary-text)" }}
+            >
+              Be part of a DOA in control of a community wallet funded by EthLlama NFT sales and worth up to 350 Eth.
+            </s.TextDescription>
+          </s.ContainerThinner>
+          <s.SpacerSmall />
+          <s.ContainerThinner>
+            <s.TextDescription
+              style={{ textAlign: "center", color: "var(--primary-text)" }}
+            >
+              Join an inclusive community of artists and developers who can help support each other and their projects.
+            </s.TextDescription>
+          </s.ContainerThinner>
+          <s.SpacerLarge />
+          <s.SpacerLarge />
+          <s.Container flex={0} jc={"center"} ai={"center"}>
+            <StyledImg
+              alt={"EthLlamas"}
+              src={"/config/images/ethllamas.gif"}
+              border="0"
+            />
+          </s.Container>
+          
+      </s.ContainerThin>
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+
+      {/* How Much */}
+      <s.ContainerThin
+          flex={0}
+          jc={"center"}
+          ai={"center"}
+          style={{
+            backgroundColor: "var(--primary)",
+          }}
+        >
+        <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 50,
+            fontWeight: "bold",
+            color: "var(--primary-text)",
+          }}
+        >
+          So How Much?
+          </s.TextTitle>
+          <s.SpacerSmall />
+          <s.ContainerThinner>
+            <s.TextDescription
+              style={{ textAlign: "center", color: "var(--primary-text)" }}
+            >
+              EthLlamas NFTs are 0.05 ETH each to mint, with a 20 mint limit.
+            </s.TextDescription>
+          </s.ContainerThinner>
+          <s.SpacerSmall />
+          <s.ContainerThinner>
+            <s.TextDescription
+              style={{ textAlign: "center", color: "var(--primary-text)" }}
+            >
+              Proceeds will be shared, with 70% going to a community wallet to be controlled by the DAO, and 30% going to the EthLlamas team to promote and build out the project.
+            </s.TextDescription>
+          </s.ContainerThinner>
+          
+      </s.ContainerThin>
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+
+      {/* Core Values */}
+      <s.ContainerThin
+          flex={0}
+          jc={"center"}
+          ai={"center"}
+          style={{
+            backgroundColor: "var(--primary)",
+          }}
+        >
+        <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 50,
+            fontWeight: "bold",
+            color: "var(--primary-text)",
+          }}
+        >
+          Core Values
+          </s.TextTitle>
+          <s.SpacerSmall />
+          <s.ContainerThinner>
+            <s.TextDescription
+              style={{ textAlign: "center", color: "var(--primary-text)" }}
+            >
+              We want to grow a community of positivity and inclusiveness, where artists, devs, and collectors can come together to talk and help each other. Join the Discord, opening up soon! 
+            </s.TextDescription>
+          </s.ContainerThinner>
+          <s.SpacerSmall />
+          <a href=""><img width="50" heigth="50" src="/config/images/discord-logo-white.png"></img></a>
+          
+      </s.ContainerThin>
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+
+      {/* The Team */}
+      <s.ContainerThin
+          flex={0}
+          jc={"center"}
+          ai={"center"}
+          style={{
+            backgroundColor: "var(--primary)",
+          }}
+        >
+        <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 50,
+            fontWeight: "bold",
+            color: "var(--primary-text)",
+          }}
+        >
+          The Team
+          </s.TextTitle>
+          <s.SpacerMedium />
+          <s.Container flex={0} jc={"center"} ai={"center"}>
+            <ProfileImg
+              alt={"Empulse Twitter"}
+              src={"/config/images/punk15785.png"}
+              border="0"
+            />
+          </s.Container>
+          <s.SpacerSmall />
+          <s.ContainerThinner>
+            <s.TextDescription
+              style={{ textAlign: "center", color: "var(--primary-text)" }}
+            >
+              Empulse (Eric) is a Site Reliability Engineer, software developer, amateur artist, and creator of EthLlamas.
+            </s.TextDescription>
+          </s.ContainerThinner>
+          <s.SpacerSmall />
+          <a href="https://twitter.com/empulse_nft"><img width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
+          <s.SpacerSmall />
+          
+      </s.ContainerThin>
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+
+      {/* Open Source */}
+      <s.ContainerThin
+          flex={0}
+          jc={"center"}
+          ai={"center"}
+          style={{
+            backgroundColor: "var(--primary)",
+          }}
+        >
+        <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 50,
+            fontWeight: "bold",
+            color: "var(--primary-text)",
+          }}
+        >
+          Open Source
+          </s.TextTitle>
+          <s.SpacerSmall />
+          <s.ContainerThinner>
+            <s.TextDescription
+              style={{ textAlign: "center", color: "var(--primary-text)" }}
+            >
+              We aim to give back to the Open Source community by making all code for the smart contracts, website, and DAPP available publicly on github.com.
+            </s.TextDescription>
+          </s.ContainerThinner>
+          <s.SpacerLarge />
+          <s.SpacerLarge />
+          
+      </s.ContainerThin>
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+        
+        {/* <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/ethllamas.gif"} />
           </s.Container>
@@ -246,11 +518,11 @@ function App() {
             >
               COMING SOON!
               </s.TextTitle>
-              <s.TextTitle
+              <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   New NFT collection of 10,000 unique llamas living on the Ethereum blockchain.
-              </s.TextTitle>
+              </s.TextDescription>
               <a href="https://twitter.com/EthLlamasNFT"><img src="/config/images/twitter.png"></img></a>
             </s.Container>
             <s.SpacerLarge />
@@ -261,7 +533,7 @@ function App() {
                 style={{ transform: "scaleX(-1)" }}
               />
             </s.Container>
-        </ResponsiveWrapper>
+        </ResponsiveWrapper> */}
         {/* <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/ethllamas.gif"} />
@@ -512,7 +784,7 @@ function App() {
           <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--primary-text)",
+              color: "var(--secondary-text)",
             }}
           >
             ethllamas.com
