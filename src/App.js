@@ -1,17 +1,16 @@
-import React, { useEffect, useState, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { connect } from "./redux/blockchain/blockchainActions";
-import { fetchData } from "./redux/data/dataActions";
+import React, { useState } from "react";
+// import { useDispatch, useSelector } from "react-redux";
+// import { connect } from "./redux/blockchain/blockchainActions";
+// import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 // import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown';
-import BootstrapNavbar from "./components/Navbar.js";
-import { ListGroup,Container,Navbar,Nav,NavItem,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
+// import { ListGroup,Container,Navbar,Nav,NavItem,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
 
-const truncate = (input, len) =>
-  input.length > len ? `${input.substring(0, len)}...` : input;
+// const truncate = (input, len) =>
+  // input.length > len ? `${input.substring(0, len)}...` : input;
 
 export const StyledButton = styled.button`
   padding: 10px;
@@ -124,13 +123,14 @@ export const StyledLink = styled.a`
 `;
 
 function App() {
-  const dispatch = useDispatch();
-  const blockchain = useSelector((state) => state.blockchain);
-  const data = useSelector((state) => state.data);
-  const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
-  const [mintAmount, setMintAmount] = useState(1);
-  const [CONFIG, SET_CONFIG] = useState({
+  // const dispatch = useDispatch();
+  // const blockchain = useSelector((state) => state.blockchain);
+  // const data = useSelector((state) => state.data);
+  // const [claimingNft, setClaimingNft] = useState(false);
+  // const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  // const [mintAmount, setMintAmount] = useState(1);
+  // const [CONFIG, SET_CONFIG] = useState({
+    const [CONFIG] = useState({
     CONTRACT_ADDRESS: "",
     SCAN_LINK: "",
     NETWORK: {
@@ -149,78 +149,78 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
-  const claimNFTs = () => {
-    let cost = CONFIG.WEI_COST;
-    let gasLimit = CONFIG.GAS_LIMIT;
-    let totalCostWei = String(cost * mintAmount);
-    let totalGasLimit = String(gasLimit * mintAmount);
-    console.log("Cost: ", totalCostWei);
-    console.log("Gas limit: ", totalGasLimit);
-    setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
-    setClaimingNft(true);
-    blockchain.smartContract.methods
-      .safeMint(blockchain.account, mintAmount)
-      .send({
-        gasLimit: String(totalGasLimit),
-        to: CONFIG.CONTRACT_ADDRESS,
-        from: blockchain.account,
-        value: totalCostWei,
-      })
-      .once("error", (err) => {
-        console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
-        setClaimingNft(false);
-      })
-      .then((receipt) => {
-        console.log(receipt);
-        setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
-        );
-        setClaimingNft(false);
-        dispatch(fetchData(blockchain.account));
-      });
-  };
+  // const claimNFTs = () => {
+  //   let cost = CONFIG.WEI_COST;
+  //   let gasLimit = CONFIG.GAS_LIMIT;
+  //   let totalCostWei = String(cost * mintAmount);
+  //   let totalGasLimit = String(gasLimit * mintAmount);
+  //   console.log("Cost: ", totalCostWei);
+  //   console.log("Gas limit: ", totalGasLimit);
+  //   setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
+  //   setClaimingNft(true);
+  //   blockchain.smartContract.methods
+  //     .safeMint(blockchain.account, mintAmount)
+  //     .send({
+  //       gasLimit: String(totalGasLimit),
+  //       to: CONFIG.CONTRACT_ADDRESS,
+  //       from: blockchain.account,
+  //       value: totalCostWei,
+  //     })
+  //     .once("error", (err) => {
+  //       console.log(err);
+  //       setFeedback("Sorry, something went wrong please try again later.");
+  //       setClaimingNft(false);
+  //     })
+  //     .then((receipt) => {
+  //       console.log(receipt);
+  //       setFeedback(
+  //         `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+  //       );
+  //       setClaimingNft(false);
+  //       dispatch(fetchData(blockchain.account));
+  //     });
+  // };
 
-  const decrementMintAmount = () => {
-    let newMintAmount = mintAmount - 1;
-    if (newMintAmount < 1) {
-      newMintAmount = 1;
-    }
-    setMintAmount(newMintAmount);
-  };
+  // const decrementMintAmount = () => {
+  //   let newMintAmount = mintAmount - 1;
+  //   if (newMintAmount < 1) {
+  //     newMintAmount = 1;
+  //   }
+  //   setMintAmount(newMintAmount);
+  // };
 
-  const incrementMintAmount = () => {
-    let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 50) {
-      newMintAmount = 50;
-    }
-    setMintAmount(newMintAmount);
-  };
+  // const incrementMintAmount = () => {
+  //   let newMintAmount = mintAmount + 1;
+  //   if (newMintAmount > 50) {
+  //     newMintAmount = 50;
+  //   }
+  //   setMintAmount(newMintAmount);
+  // };
 
-  const getData = () => {
-    if (blockchain.account !== "" && blockchain.smartContract !== null) {
-      dispatch(fetchData(blockchain.account));
-    }
-  };
+  // const getData = () => {
+  //   if (blockchain.account !== "" && blockchain.smartContract !== null) {
+  //     dispatch(fetchData(blockchain.account));
+  //   }
+  // };
 
-  const getConfig = async () => {
-    const configResponse = await fetch("/config/config.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    });
-    const config = await configResponse.json();
-    SET_CONFIG(config);
-  };
+  // const getConfig = async () => {
+  //   const configResponse = await fetch("/config/config.json", {
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       Accept: "application/json",
+  //     },
+  //   });
+  //   const config = await configResponse.json();
+  //   SET_CONFIG(config);
+  // };
 
-  useEffect(() => {
-    getConfig();
-  }, []);
+  // useEffect(() => {
+  //   getConfig();
+  // }, []);
 
-  useEffect(() => {
-    getData();
-  }, [blockchain.account]);
+  // useEffect(() => {
+  //   getData();
+  // }, [blockchain.account]);
 
   // For countdown timer
   const Completionist = () => <span>Mint is preparing to go live!</span>;
@@ -251,13 +251,13 @@ function App() {
           padding: 0,
         }}
       >
-        <a href=""><img width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></a>
+        <img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img>
         <s.SpacerSmall />
-        <a href=""><img width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img></a>
+        <img alt="logo" width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img>
         <s.SpacerSmall />
-        <a href=""><img width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></a>
+        <img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img>
         <s.SpacerSmall />
-        <a href="https://twitter.com/EthLlamasNFT"><img width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
+        <a href="https://twitter.com/EthLlamasNFT"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
       </s.ContainerNav>
            
       {/* Top Logo */}
@@ -295,7 +295,7 @@ function App() {
             EthLlamas is an NFT collection of 10,000 unique hand drawn llamas living on the Ethereum blockchain whose purpose is to create an open and inclusive community and DAO.
           </s.TextDescription>
         <s.SpacerSmall />
-        <a href="https://twitter.com/EthLlamasNFT"><img width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
+        <a href="https://twitter.com/EthLlamasNFT"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
         <s.SpacerSmall />
         <s.TextSubTitle
         style={{
@@ -416,7 +416,7 @@ function App() {
             Join the Discord, opening soon! 
           </s.TextDescription>
           <s.SpacerSmall />
-          <a href=""><img width="50" heigth="50" src="/config/images/discord-logo-white.png"></img></a>
+          <img alt="logo" width="50" heigth="50" src="/config/images/discord-logo-white.png"></img>
           
       </s.ContainerThin>
       <s.SpacerLarge />
@@ -458,7 +458,7 @@ function App() {
             Eric is a Site Reliability Engineer, software developer, amateur artist, and creator of EthLlamas.
           </s.TextSubTitle>
           <s.SpacerSmall />
-          <a href="https://twitter.com/empulse_nft"><img width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
+          <a href="https://twitter.com/empulse_nft"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
           <s.SpacerSmall />
           
       </s.ContainerThin>
@@ -493,7 +493,7 @@ function App() {
             We hope this helps other artists and developers in the space launch their projects or allows others to contribute to EthLlamas.
           </s.TextDescription>
           <s.SpacerSmall />
-          <a href=""><img width="50" heigth="50" src="/config/images/github-logo-white.png"></img></a>
+          <img alt="logo" width="50" heigth="50" src="/config/images/github-logo-white.png"></img>
           <s.SpacerLarge />
           <s.SpacerLarge />
           
