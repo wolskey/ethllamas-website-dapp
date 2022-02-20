@@ -231,7 +231,7 @@ function App() {
       return <Completionist />;
     } else {
       // Render a countdown
-      return <span>Minting in {days} days {hours}h {minutes}m {seconds}s</span>;
+      return <span>Mint in {days} days {hours}h {minutes}m {seconds}s</span>;
     }
   };
 
@@ -265,35 +265,32 @@ function App() {
           style={{
             textAlign: "center",
             fontSize: 50,
-            fontWeight: "bold",
             color: "var(--primary-text)",
           }}
         >
           Welcome to EthLlamas
-          </s.TextTitle>
-          <s.SpacerSmall />
-          <s.ContainerThinner>
-            <s.TextDescription
-              style={{ textAlign: "center", color: "var(--primary-text)" }}
-            >
-              EthLlamas is an NFT collection of 10,000 unique hand drawn llamas living on the Ethereum blockchain whose purpose is to create an open and inclusive community and DAO.
-            </s.TextDescription>
-          </s.ContainerThinner>
-          <s.SpacerSmall />
-          <a href="https://twitter.com/EthLlamasNFT"><img width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
-          <s.SpacerSmall />
-          <s.TextSubTitle
-          style={{
-            textAlign: "center",
-            fontSize: 40,
-            color: "var(--secondary-text)",
-          }}
+        </s.TextTitle>
+        <s.SpacerSmall />
+          <s.TextDescription
+            style={{ textAlign: "center", color: "var(--primary-text)" }}
+          >
+            EthLlamas is an NFT collection of 10,000 unique hand drawn llamas living on the Ethereum blockchain whose purpose is to create an open and inclusive community and DAO.
+          </s.TextDescription>
+        <s.SpacerSmall />
+        <a href="https://twitter.com/EthLlamasNFT"><img width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
+        <s.SpacerSmall />
+        <s.TextSubTitle
+        style={{
+          textAlign: "center",
+          fontSize: 40,
+          color: "var(--secondary-text)",
+        }}
         >
-          <Countdown
-           date='2022-03-05T11:00:00-06:00'
-           renderer={renderer}
-          />
-          </s.TextSubTitle>
+        <Countdown
+          date='2022-03-05T11:00:00-06:00'
+          renderer={renderer}
+        />
+        </s.TextSubTitle>
       </s.ContainerThin>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -315,18 +312,19 @@ function App() {
             color: "var(--primary-text)",
           }}
         >
-          Why Buy an EthLlamas NFT?
+          Why Buy EthLlamas?
           </s.TextTitle>
           <s.SpacerSmall />
-          <s.ContainerThinner>
-            <s.TextDescription
-              style={{ textAlign: "center", color: "var(--primary-text)" }}
-            >
-              Be part of a DOA in control of a community wallet funded by EthLlama NFT sales and worth up to 350 Eth.
-              <s.SpacerSmall />
-              Join an inclusive community of artists and developers who can help support each other and their projects.
-            </s.TextDescription>
-          </s.ContainerThinner>
+          <s.TextDescription
+            style={{ 
+              textAlign: "center", 
+              color: "var(--primary-text)",
+            }}
+          >
+            Be part of a DOA in control of a community wallet funded by EthLlama NFT sales and worth up to 350 Eth.
+            <s.SpacerSmall />
+            Join an inclusive community of artists and developers who can help support each other and their projects.
+          </s.TextDescription>
           <s.SpacerLarge />
           <s.SpacerLarge />
           <s.Container flex={0} jc={"center"} ai={"center"}>
@@ -361,16 +359,13 @@ function App() {
           So, How Much?
           </s.TextTitle>
           <s.SpacerSmall />
-          <s.ContainerThinner>
-            <s.TextDescription
-              style={{ textAlign: "center", color: "var(--primary-text)" }}
-            >
-              EthLlamas NFTs are 0.05 ETH each to mint, with a 20 mint limit.
-              <s.SpacerSmall />
-              Proceeds will be shared, with 70% going to a community wallet to be controlled by the DAO, and 30% going to the EthLlamas team to promote and build out the project.
-            </s.TextDescription>
-          </s.ContainerThinner>
-          
+          <s.TextDescription
+            style={{ textAlign: "center", color: "var(--primary-text)" }}
+          >
+            EthLlamas NFTs are 0.05 ETH each to mint, with a 20 mint limit.
+            <s.SpacerSmall />
+            Proceeds will be shared, with 70% going to a community wallet to be controlled by the DAO, and 30% going to the EthLlamas team to promote and build out the project.
+          </s.TextDescription>
       </s.ContainerThin>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -395,15 +390,13 @@ function App() {
           Core Values
           </s.TextTitle>
           <s.SpacerSmall />
-          <s.ContainerThinner>
-            <s.TextDescription
-              style={{ textAlign: "center", color: "var(--primary-text)" }}
-            >
-              We want to grow a community of positivity and inclusiveness, where artists, devs, and collectors can come together to talk and help each other.
-              <s.SpacerSmall />
-              Join the Discord, opening soon! 
-            </s.TextDescription>
-          </s.ContainerThinner>
+          <s.TextDescription
+            style={{ textAlign: "center", color: "var(--primary-text)" }}
+          >
+            We want to grow a community of positivity and inclusiveness, where artists, devs, and collectors can come together to talk and help each other.
+            <s.SpacerSmall />
+            Join the Discord, opening soon! 
+          </s.TextDescription>
           <s.SpacerSmall />
           <a href=""><img width="50" heigth="50" src="/config/images/discord-logo-white.png"></img></a>
           
@@ -439,15 +432,13 @@ function App() {
             />
           </s.Container>
           <s.SpacerSmall />
-          <s.ContainerThinner>
-            <s.TextSubTitle
-              style={{ textAlign: "center", color: "var(--primary-text)" }}
-            >
-              @Empulse_NFT
-              <s.SpacerXSmall />
-              Eric is a Site Reliability Engineer, software developer, amateur artist, and creator of EthLlamas.
-            </s.TextSubTitle>
-          </s.ContainerThinner>
+          <s.TextSubTitle
+            style={{ textAlign: "center", color: "var(--primary-text)" }}
+          >
+            @Empulse_NFT
+            <s.SpacerXSmall />
+            Eric is a Site Reliability Engineer, software developer, amateur artist, and creator of EthLlamas.
+          </s.TextSubTitle>
           <s.SpacerSmall />
           <a href="https://twitter.com/empulse_nft"><img width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
           <s.SpacerSmall />
@@ -476,15 +467,15 @@ function App() {
           Open Source
           </s.TextTitle>
           <s.SpacerSmall />
-          <s.ContainerThinner>
-            <s.TextDescription
-              style={{ textAlign: "center", color: "var(--primary-text)" }}
-            >
-              We aim to give back to the Open Source community by making all code for the smart contracts, website, and DAPP available publicly on github.com.
-              <s.SpacerSmall />
-              We hope this helps other artists and developers in the space launch their projects or allows others to contribute to EthLlamas.
-            </s.TextDescription>
-          </s.ContainerThinner>
+          <s.TextDescription
+            style={{ textAlign: "center", color: "var(--primary-text)" }}
+          >
+            We aim to give back to the Open Source community by making all code for the smart contracts, website, and DAPP available publicly on github.com.
+            <s.SpacerSmall />
+            We hope this helps other artists and developers in the space launch their projects or allows others to contribute to EthLlamas.
+          </s.TextDescription>
+          <s.SpacerSmall />
+          <a href=""><img width="50" heigth="50" src="/config/images/github-logo-white.png"></img></a>
           <s.SpacerLarge />
           <s.SpacerLarge />
           

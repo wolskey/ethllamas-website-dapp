@@ -58,20 +58,8 @@ export const ContainerThin = styled.div`
   justify-content: ${({ jc }) => (jc ? jc : "flex-start")};
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
-  width: 100%;
-  background-image: ${({ image }) => (image ? `url(${image})` : "none")};
-  background-size: cover;
-  background-position: center;
-`;
-
-export const ContainerThinner = styled.div`
-  display: flex;
-  flex: ${({ flex }) => (flex ? flex : 0)};
-  flex-direction: ${({ fd }) => (fd ? fd : "column")};
-  justify-content: ${({ jc }) => (jc ? jc : "flex-start")};
-  align-items: ${({ ai }) => (ai ? ai : "flex-start")};
-  background-color: ${({ test }) => (test ? "pink" : "none")};
-  width: 500px;
+  width: fit-content;
+  max-width: 520px;
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
@@ -80,7 +68,7 @@ export const ContainerThinner = styled.div`
 export const TextTitle = styled.p`
   color: var(--primary-text);
   font-size: 26.4px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1.6;
 `;
 
@@ -94,6 +82,7 @@ export const TextDescription = styled.p`
   color: var(--primary-text);
   font-size: 19.2px;
   line-height: 1.6;
+  font-weight: 100;
 `;
 
 export const StyledClickable = styled.div`
