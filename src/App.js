@@ -259,6 +259,8 @@ function App() {
         <s.SpacerSmall />
         <a href="https://twitter.com/EthLlamasNFT"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
       </s.ContainerNav>
+      <s.SpacerLarge />
+      <s.SpacerLarge />
            
       {/* Top Logo */}
       <s.Container

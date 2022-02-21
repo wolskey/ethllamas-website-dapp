@@ -70,7 +70,7 @@ export const ContainerNav = styled.div`
   width: 100%;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 `;
 
 export const TextTitle = styled.p`
