@@ -291,13 +291,17 @@ function App() {
           Welcome to EthLlamas
         </s.TextTitle>
         <s.SpacerSmall />
-          <s.TextDescription
-            style={{ textAlign: "center", color: "var(--primary-text)" }}
-          >
-            EthLlamas is an NFT collection of 10,000 unique hand drawn llamas living on the Ethereum blockchain whose purpose is to create an open and inclusive community and DAO.
-          </s.TextDescription>
+        <s.TextDescription
+          style={{ textAlign: "center", color: "var(--primary-text)" }}
+        >
+          EthLlamas is an NFT collection of 10,000 unique hand drawn llamas living on the Ethereum blockchain.
+        </s.TextDescription>
         <s.SpacerSmall />
-        <a href="https://twitter.com/EthLlamasNFT"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
+        <s.TextDescription
+          style={{ textAlign: "center", color: "var(--primary-text)" }}
+        >
+          Creating an open and inclusive community and DAO.
+        </s.TextDescription>
         <s.SpacerSmall />
         <s.TextSubTitle
         style={{
@@ -307,7 +311,7 @@ function App() {
         }}
         >
         <Countdown
-          date='2022-03-05T11:00:00-06:00'
+          date='2022-03-12T11:00:00-06:00'
           renderer={renderer}
         />
         </s.TextSubTitle>
@@ -384,7 +388,7 @@ function App() {
           >
             EthLlamas NFTs are 0.05 ETH each to mint, with a 20 mint limit.
             <s.SpacerSmall />
-            Proceeds will be shared, with 70% going to a community wallet to be controlled by the DAO, and 30% going to the EthLlamas team to promote and build out the project.
+            The DAO will recieve 70% and the EthLlamas team will recieve 30% to promote and build out the project.
           </s.TextDescription>
       </s.ContainerThin>
       <s.SpacerLarge />
@@ -413,7 +417,7 @@ function App() {
           <s.TextDescription
             style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
-            We want to grow a community of positivity and inclusiveness, where artists, devs, and collectors can come together to talk and help each other.
+            We value positivity and inclusiveness, where artists, devs, and collectors can come together to help each other.
             <s.SpacerSmall />
             Join the Discord, opening soon! 
           </s.TextDescription>
@@ -457,7 +461,7 @@ function App() {
           >
             @Empulse_NFT
             <s.SpacerXSmall />
-            Eric is a Site Reliability Engineer, software developer, amateur artist, and creator of EthLlamas.
+            Eric is a Site Reliability Engineer, software developer, and creator of EthLlamas.
           </s.TextSubTitle>
           <s.SpacerSmall />
           <a href="https://twitter.com/empulse_nft"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
@@ -490,9 +494,9 @@ function App() {
           <s.TextDescription
             style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
-            We aim to give back to the Open Source community by making all code for the smart contracts, website, and DAPP available publicly on github.com.
+            In giving back to the Open Source community all code for the project will be made available on github.com.
             <s.SpacerSmall />
-            We hope this helps other artists and developers in the space launch their projects or allows others to contribute to EthLlamas.
+            We hope this helps other artists and developers launch their projects or allows others to contribute to EthLlamas.
           </s.TextDescription>
           <s.SpacerSmall />
           <img alt="logo" width="50" heigth="50" src="/config/images/github-logo-white.png"></img>
