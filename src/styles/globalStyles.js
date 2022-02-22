@@ -59,7 +59,7 @@ export const ContainerThin = styled.div`
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
   width: fit-content;
-  max-width: 520px;
+  max-width: 550px;
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
@@ -75,26 +75,30 @@ export const ContainerNav = styled.div`
 
 export const TextTitle = styled.p`
   color: var(--primary-text);
-  font-size: 26.4px;
+  font-size: 26px;
   font-weight: bold;
   line-height: 1.6;
 `;
 
 export const TextSubTitle = styled.p`
   color: var(--primary-text);
-  font-size: 21.6px;
+  font-size: 23px;
   line-height: 1.6;
 `;
 
 export const TextDescription = styled.p`
   color: var(--primary-text);
-  font-size: 19.2px;
+  font-size: 20px;
   line-height: 1.6;
-  font-weight: 100;
+  font-weight: 400;
 `;
 
 export const StyledClickable = styled.div`
   :active {
     opacity: 0.6;
   }
+  color: var(--primary-text);
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: bold;
 `;

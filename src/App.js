@@ -8,6 +8,7 @@ import styled from "styled-components";
 // import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown';
 // import { ListGroup,Container,Navbar,Nav,NavItem,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
+import { Link } from "react-router-dom";
 
 // const truncate = (input, len) =>
   // input.length > len ? `${input.substring(0, len)}...` : input;
@@ -251,11 +252,11 @@ function App() {
           padding: 0,
         }}
       >
-        <img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img>
+        <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></Link>
         <s.SpacerSmall />
-        <img alt="logo" width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img>
+        <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img></Link>
         <s.SpacerSmall />
-        <img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img>
+        <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></Link>
         <s.SpacerSmall />
         <a href="https://twitter.com/EthLlamasNFT"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
       </s.ContainerNav>
@@ -303,7 +304,7 @@ function App() {
           Creating an open and inclusive community and DAO.
         </s.TextDescription>
         <s.SpacerSmall />
-        <s.TextSubTitle
+        <s.TextTitle
         style={{
           textAlign: "center",
           fontSize: 40,
@@ -314,7 +315,7 @@ function App() {
           date='2022-03-12T11:00:00-06:00'
           renderer={renderer}
         />
-        </s.TextSubTitle>
+        </s.TextTitle>
       </s.ContainerThin>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -422,7 +423,7 @@ function App() {
             Join the Discord, opening soon! 
           </s.TextDescription>
           <s.SpacerSmall />
-          <img alt="logo" width="50" heigth="50" src="/config/images/discord-logo-white.png"></img>
+          <Link to="/comingsoon"><img alt="logo" width="50" heigth="50" src="/config/images/discord-logo-white.png"></img></Link>
           
       </s.ContainerThin>
       <s.SpacerLarge />
@@ -460,9 +461,12 @@ function App() {
             style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
             @Empulse_NFT
-            <s.SpacerXSmall />
-            Eric is a Site Reliability Engineer, software developer, and creator of EthLlamas.
           </s.TextSubTitle>
+          <s.TextDescription
+            style={{ textAlign: "center", color: "var(--primary-text)" }}
+          >
+            Eric is a Site Reliability Engineer, software developer, and creator of EthLlamas.
+          </s.TextDescription>
           <s.SpacerSmall />
           <a href="https://twitter.com/empulse_nft"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
           <s.SpacerSmall />
@@ -499,7 +503,7 @@ function App() {
             We hope this helps other artists and developers launch their projects or allows others to contribute to EthLlamas.
           </s.TextDescription>
           <s.SpacerSmall />
-          <img alt="logo" width="50" heigth="50" src="/config/images/github-logo-white.png"></img>
+          <Link to="/comingsoon"><img alt="logo" width="50" heigth="50" src="/config/images/github-logo-white.png"></img></Link>
           <s.SpacerLarge />
           <s.SpacerLarge />
           
@@ -800,10 +804,10 @@ function App() {
           <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--secondary-text)",
+              color: "var(--primary-text)",
             }}
           >
-            ethllamas.com
+            Copyright © 2022 ethllamas.com
           </s.TextDescription>
         </s.Container>
         {/* <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
