@@ -252,6 +252,10 @@ function App() {
           padding: 0,
         }}
       >
+        <s.StyledClickable>
+            Home
+        </s.StyledClickable>
+        <s.SpacerSmall />
         <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></Link>
         <s.SpacerSmall />
         <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img></Link>
