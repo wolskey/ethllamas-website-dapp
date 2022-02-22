@@ -90,7 +90,7 @@ export const TextDescription = styled.p`
   color: var(--primary-text);
   font-size: 20px;
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 300;
 `;
 
 export const StyledClickable = styled.div`
