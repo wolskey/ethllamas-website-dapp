@@ -36,9 +36,9 @@ export default function ComingSoon() {
         <s.SpacerSmall />
         <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img></Link>
         <s.SpacerSmall />
-        <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></Link>
+        <a href="https://discord.gg/4z7thT8RSd" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></a>
         <s.SpacerSmall />
-        <a href="https://twitter.com/EthLlamasNFT"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
+        <a href="https://twitter.com/EthLlamasNFT" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
         </s.ContainerNav>
         <s.SpacerLarge />
         <s.SpacerLarge />

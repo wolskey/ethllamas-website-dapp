@@ -260,9 +260,9 @@ function App() {
         <s.SpacerSmall />
         <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img></Link>
         <s.SpacerSmall />
-        <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></Link>
+        <a href="https://discord.gg/4z7thT8RSd" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></a>
         <s.SpacerSmall />
-        <a href="https://twitter.com/EthLlamasNFT"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
+        <a href="https://twitter.com/EthLlamasNFT" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
       </s.ContainerNav>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -299,7 +299,7 @@ function App() {
         <s.TextDescription
           style={{ textAlign: "center", color: "var(--primary-text)" }}
         >
-          EthLlamas is an NFT collection of 10,000 unique hand drawn llamas living on the Ethereum blockchain.
+          EthLlamas is a ERC-721 NFT collection of 10,000 unique llamas living on the Ethereum blockchain.
         </s.TextDescription>
         <s.SpacerSmall />
         <s.TextDescription
@@ -391,7 +391,7 @@ function App() {
           <s.TextDescription
             style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
-            EthLlamas NFTs are 0.05 ETH each to mint, with a 20 mint limit.
+            EthLlamas NFTs are 0.05ETH each to mint, with a 20 mint limit.
             <s.SpacerSmall />
             The DAO will recieve 70% and the EthLlamas team will recieve 30% to promote and build out the project.
           </s.TextDescription>
@@ -424,10 +424,10 @@ function App() {
           >
             We value positivity and inclusiveness, where artists, devs, and collectors can come together to help each other.
             <s.SpacerSmall />
-            Join the Discord, opening soon! 
+            Join the Discord! 
           </s.TextDescription>
           <s.SpacerSmall />
-          <Link to="/comingsoon"><img alt="logo" width="50" heigth="50" src="/config/images/discord-logo-white.png"></img></Link>
+          <a href="https://discord.gg/4z7thT8RSd" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/discord-logo-white.png"></img></a>
           
       </s.ContainerThin>
       <s.SpacerLarge />
@@ -472,7 +472,7 @@ function App() {
             Eric is a Site Reliability Engineer, software developer, and creator of EthLlamas.
           </s.TextDescription>
           <s.SpacerSmall />
-          <a href="https://twitter.com/empulse_nft"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
+          <a href="https://twitter.com/empulse_nft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
           <s.SpacerSmall />
           
       </s.ContainerThin>
@@ -547,7 +547,7 @@ function App() {
                 >
                   New NFT collection of 10,000 unique llamas living on the Ethereum blockchain.
               </s.TextDescription>
-              <a href="https://twitter.com/EthLlamasNFT"><img src="/config/images/twitter.png"></img></a>
+              <a href="https://twitter.com/EthLlamasNFT" target="_blank" rel="noopener noreferrer"><img src="/config/images/twitter.png"></img></a>
             </s.Container>
             <s.SpacerLarge />
             <s.Container flex={1} jc={"center"} ai={"center"}>
