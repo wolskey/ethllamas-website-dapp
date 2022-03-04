@@ -262,7 +262,7 @@ function App() {
         <s.SpacerSmall />
         <a href="https://discord.gg/4z7thT8RSd" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></a>
         <s.SpacerSmall />
-        <a href="https://twitter.com/EthLlamasNFT" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
+        <a href="https://twitter.com/ethllamas" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
       </s.ContainerNav>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -299,13 +299,7 @@ function App() {
         <s.TextDescription
           style={{ textAlign: "center", color: "var(--primary-text)" }}
         >
-          EthLlamas is a ERC-721 NFT collection of 10,000 unique llamas living on the Ethereum blockchain.
-        </s.TextDescription>
-        <s.SpacerSmall />
-        <s.TextDescription
-          style={{ textAlign: "center", color: "var(--primary-text)" }}
-        >
-          Creating an open and inclusive community and DAO.
+          EthLlamas is an ERC-721 NFT collection of 10,000 unique llamas living on the Ethereum blockchain.
         </s.TextDescription>
         <s.SpacerSmall />
         <s.TextTitle
@@ -320,50 +314,6 @@ function App() {
           renderer={renderer}
         />
         </s.TextTitle>
-      </s.ContainerThin>
-      <s.SpacerLarge />
-      <s.SpacerLarge />
-
-      {/* Why Buy */}
-      <s.ContainerThin
-          flex={0}
-          jc={"center"}
-          ai={"center"}
-          style={{
-            backgroundColor: "var(--primary)",
-          }}
-        >
-        <s.TextTitle
-          style={{
-            textAlign: "center",
-            fontSize: 50,
-            fontWeight: "bold",
-            color: "var(--primary-text)",
-          }}
-        >
-          Why Buy EthLlamas?
-          </s.TextTitle>
-          <s.SpacerSmall />
-          <s.TextDescription
-            style={{ 
-              textAlign: "center", 
-              color: "var(--primary-text)",
-            }}
-          >
-            Be part of a DOA in control of a community wallet funded by EthLlama NFT sales and worth up to 350 Eth.
-            <s.SpacerSmall />
-            Join an inclusive community of artists and developers who can help support each other and their projects.
-          </s.TextDescription>
-          <s.SpacerLarge />
-          <s.SpacerLarge />
-          <s.Container flex={0} jc={"center"} ai={"center"}>
-            <StyledImg
-              alt={"EthLlamas"}
-              src={"/config/images/ethllamas.gif"}
-              border="0"
-            />
-          </s.Container>
-          
       </s.ContainerThin>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -385,51 +335,23 @@ function App() {
             color: "var(--primary-text)",
           }}
         >
-          So, How Much?
+          Mint Price
           </s.TextTitle>
           <s.SpacerSmall />
           <s.TextDescription
             style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
-            EthLlamas NFTs are 0.05ETH each to mint, with a 20 mint limit.
-            <s.SpacerSmall />
-            The DAO will recieve 70% and the EthLlamas team will recieve 30% to promote and build out the project.
+            EthLlamas NFTs are 0.04 ETH each to mint + optimized gas, with a 20 mint limit.
           </s.TextDescription>
       </s.ContainerThin>
       <s.SpacerLarge />
-      <s.SpacerLarge />
-
-      {/* Core Values */}
-      <s.ContainerThin
-          flex={0}
-          jc={"center"}
-          ai={"center"}
-          style={{
-            backgroundColor: "var(--primary)",
-          }}
-        >
-        <s.TextTitle
-          style={{
-            textAlign: "center",
-            fontSize: 50,
-            fontWeight: "bold",
-            color: "var(--primary-text)",
-          }}
-        >
-          Core Values
-          </s.TextTitle>
-          <s.SpacerSmall />
-          <s.TextDescription
-            style={{ textAlign: "center", color: "var(--primary-text)" }}
-          >
-            We value positivity and inclusiveness, where artists, devs, and collectors can come together to help each other.
-            <s.SpacerSmall />
-            Join the Discord! 
-          </s.TextDescription>
-          <s.SpacerSmall />
-          <a href="https://discord.gg/4z7thT8RSd" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/discord-logo-white.png"></img></a>
-          
-      </s.ContainerThin>
+          <s.Container flex={0} jc={"center"} ai={"center"}>
+            <StyledImg
+              alt={"EthLlamas"}
+              src={"/config/images/ethllamas.gif"}
+              border="0"
+            />
+          </s.Container>
       <s.SpacerLarge />
       <s.SpacerLarge />
 
@@ -547,7 +469,7 @@ function App() {
                 >
                   New NFT collection of 10,000 unique llamas living on the Ethereum blockchain.
               </s.TextDescription>
-              <a href="https://twitter.com/EthLlamasNFT" target="_blank" rel="noopener noreferrer"><img src="/config/images/twitter.png"></img></a>
+              <a href="https://twitter.com/EthLlamas" target="_blank" rel="noopener noreferrer"><img src="/config/images/twitter.png"></img></a>
             </s.Container>
             <s.SpacerLarge />
             <s.Container flex={1} jc={"center"} ai={"center"}>
