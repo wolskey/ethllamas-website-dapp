@@ -355,6 +355,42 @@ function App() {
       <s.SpacerLarge />
       <s.SpacerLarge />
 
+      {/* Open Source */}
+      <s.ContainerThin
+          flex={0}
+          jc={"center"}
+          ai={"center"}
+          style={{
+            backgroundColor: "var(--primary)",
+          }}
+        >
+        <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 50,
+            fontWeight: "bold",
+            color: "var(--primary-text)",
+          }}
+        >
+          Open Source
+          </s.TextTitle>
+          <s.SpacerSmall />
+          <s.TextDescription
+            style={{ textAlign: "center", color: "var(--primary-text)" }}
+          >
+            In giving back to the Open Source community all code for the project will be made available on github.com.
+            <s.SpacerSmall />
+            We hope this helps other artists and developers launch their projects or allows others to contribute to EthLlamas.
+          </s.TextDescription>
+          <s.SpacerSmall />
+          <Link to="/comingsoon"><img alt="logo" width="50" heigth="50" src="/config/images/github-logo-white.png"></img></Link>
+          <s.SpacerLarge />
+          <s.SpacerLarge />
+          
+      </s.ContainerThin>
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+
       {/* The Team */}
       <s.ContainerThin
           flex={0}
@@ -396,42 +432,6 @@ function App() {
           <s.SpacerSmall />
           <a href="https://twitter.com/empulse_nft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
           <s.SpacerSmall />
-          
-      </s.ContainerThin>
-      <s.SpacerLarge />
-      <s.SpacerLarge />
-
-      {/* Open Source */}
-      <s.ContainerThin
-          flex={0}
-          jc={"center"}
-          ai={"center"}
-          style={{
-            backgroundColor: "var(--primary)",
-          }}
-        >
-        <s.TextTitle
-          style={{
-            textAlign: "center",
-            fontSize: 50,
-            fontWeight: "bold",
-            color: "var(--primary-text)",
-          }}
-        >
-          Open Source
-          </s.TextTitle>
-          <s.SpacerSmall />
-          <s.TextDescription
-            style={{ textAlign: "center", color: "var(--primary-text)" }}
-          >
-            In giving back to the Open Source community all code for the project will be made available on github.com.
-            <s.SpacerSmall />
-            We hope this helps other artists and developers launch their projects or allows others to contribute to EthLlamas.
-          </s.TextDescription>
-          <s.SpacerSmall />
-          <Link to="/comingsoon"><img alt="logo" width="50" heigth="50" src="/config/images/github-logo-white.png"></img></Link>
-          <s.SpacerLarge />
-          <s.SpacerLarge />
           
       </s.ContainerThin>
       <s.SpacerLarge />
