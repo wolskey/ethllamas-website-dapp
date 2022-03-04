@@ -260,6 +260,8 @@ function App() {
         <s.SpacerSmall />
         <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img></Link>
         <s.SpacerSmall />
+        <a href="https://github.com/ethllamasnft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/github-logo-white.png"></img></a>
+        <s.SpacerSmall />
         <a href="https://discord.gg/4z7thT8RSd" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></a>
         <s.SpacerSmall />
         <a href="https://twitter.com/ethllamas" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
@@ -383,7 +385,7 @@ function App() {
             We hope this helps other artists and developers launch their projects or allows others to contribute to EthLlamas.
           </s.TextDescription>
           <s.SpacerSmall />
-          <Link to="/comingsoon"><img alt="logo" width="50" heigth="50" src="/config/images/github-logo-white.png"></img></Link>
+          <a href="https://github.com/ethllamasnft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/github-logo-white.png"></img></a>
           <s.SpacerLarge />
           <s.SpacerLarge />
           
