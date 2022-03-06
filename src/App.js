@@ -262,9 +262,9 @@ function App() {
         <s.SpacerSmall />
         <a href="https://github.com/ethllamasnft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/github-logo-white.png"></img></a>
         <s.SpacerSmall />
-        <a href="https://discord.gg/4z7thT8RSd" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></a>
-        <s.SpacerSmall />
-        <a href="https://twitter.com/ethllamas" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-white.png"></img></a>
+        {/* <a href="https://discord.gg/4z7thT8RSd" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></a>
+        <s.SpacerSmall /> */}
+        <a href="https://twitter.com/ethllamas" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-circle-white.png"></img></a>
       </s.ContainerNav>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -303,7 +303,7 @@ function App() {
         >
           EthLlamas is an ERC-721 NFT collection of 10,000 unique llamas living on the Ethereum blockchain.
         </s.TextDescription>
-        <s.SpacerSmall />
+        <s.SpacerLarge />
         <s.TextTitle
         style={{
           textAlign: "center",
@@ -312,10 +312,11 @@ function App() {
         }}
         >
         <Countdown
-          date='2022-03-12T11:00:00-06:00'
+          date='2022-03-26T11:00:00-06:00'
           renderer={renderer}
         />
         </s.TextTitle>
+        <s.SpacerLarge />
       </s.ContainerThin>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -356,6 +357,8 @@ function App() {
           </s.Container>
       <s.SpacerLarge />
       <s.SpacerLarge />
+      <s.SpacerLarge />
+      <s.SpacerLarge />
 
       {/* Open Source */}
       <s.ContainerThin
@@ -380,7 +383,7 @@ function App() {
           <s.TextDescription
             style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
-            In giving back to the Open Source community all code for the project will be made available on github.com.
+            In giving back to the Open Source community, all code for the project will be made available on Github.
             <s.SpacerSmall />
             We hope this helps other artists and developers launch their projects or allows others to contribute to EthLlamas.
           </s.TextDescription>
@@ -432,7 +435,7 @@ function App() {
             Eric is a Site Reliability Engineer, software developer, and creator of EthLlamas.
           </s.TextDescription>
           <s.SpacerSmall />
-          <a href="https://twitter.com/empulse_nft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-white.png"></img></a>
+          <a href="https://twitter.com/empulse_nft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-circle-white.png"></img></a>
           <s.SpacerSmall />
           
       </s.ContainerThin>
