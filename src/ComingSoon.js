@@ -40,7 +40,7 @@ export default function ComingSoon() {
         <s.SpacerSmall />
         {/* <a href="https://discord.gg/4z7thT8RSd" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></a>
         <s.SpacerSmall /> */}
-        <a href="https://twitter.com/EthLlamasNFT" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-circle-white.png"></img></a>
+        <a href="https://twitter.com/EthLlamas_NFT" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-circle-white.png"></img></a>
         </s.ContainerNav>
         <s.SpacerLarge />
         <s.SpacerLarge />
