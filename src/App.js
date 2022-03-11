@@ -233,7 +233,7 @@ function App() {
       return <Completionist />;
     } else {
       // Render a countdown
-      return <span>Mint in {days} days {hours}h {minutes}m {seconds}s</span>;
+      return <span>Mint starts in {days} days {hours}h {minutes}m {seconds}s</span>;
     }
   };
 
@@ -316,7 +316,6 @@ function App() {
           renderer={renderer}
         />
         </s.TextTitle>
-        <s.SpacerLarge />
       </s.ContainerThin>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -353,10 +352,14 @@ function App() {
               alt={"EthLlamas"}
               src={"/config/images/ethllamas.gif"}
               border="0"
+              style={{
+                backgroundColor: "var(--accent)",
+                borderRadius: 24,
+                border: "4px solid var(--secondary)",
+                boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+              }}
             />
           </s.Container>
-      <s.SpacerLarge />
-      <s.SpacerLarge />
       <s.SpacerLarge />
       <s.SpacerLarge />
 
@@ -389,8 +392,127 @@ function App() {
           </s.TextDescription>
           <s.SpacerSmall />
           <a href="https://github.com/ethllamasnft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/github-logo-white.png"></img></a>
-          <s.SpacerLarge />
-          <s.SpacerLarge />
+          
+      </s.ContainerThin>
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+
+      {/* Roadmap */}
+      <s.ContainerThin
+          flex={0}
+          jc={"center"}
+          ai={"center"}
+          style={{
+            backgroundColor: "var(--primary)",
+          }}
+        >
+        <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 50,
+            fontWeight: "bold",
+            color: "var(--primary-text)",
+          }}
+        >
+          Roadmap
+          </s.TextTitle>
+          <s.SpacerSmall />
+          <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+            <s.Container
+                flex={2}
+                jc={"center"}
+                ai={"center"}
+                style={{
+                  backgroundColor: "var(--accent)",
+                  padding: 24,
+                  borderRadius: 24,
+                  border: "4px solid var(--secondary)",
+                  boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+                }}
+              >
+                <s.TextTitle>
+                Phase 1
+                </s.TextTitle>
+                <s.TextDescription
+                    style={{ textAlign: "center" }}
+                  >
+                    Smart contract audit by third party. Publish all code on Github. Promote on Twitter, Instagram, and Reddit.
+                </s.TextDescription>
+              </s.Container>
+          </ResponsiveWrapper>
+          <s.SpacerMedium />
+          <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+            <s.Container
+                flex={2}
+                jc={"center"}
+                ai={"center"}
+                style={{
+                  backgroundColor: "var(--accent)",
+                  padding: 24,
+                  borderRadius: 24,
+                  border: "4px solid var(--secondary)",
+                  boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+                }}
+              >
+                <s.TextTitle>
+                Phase 2
+                </s.TextTitle>
+                <s.TextDescription style={{ textAlign: "center" }} >
+                    Mint starts 3/26/2022
+                </s.TextDescription>
+                <s.TextDescription style={{ textAlign: "center" }} >
+                  150 EthLlamas set aside for giveaways and promotions.
+                </s.TextDescription>
+              </s.Container>
+          </ResponsiveWrapper>
+          <s.SpacerMedium />
+          <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+            <s.Container
+                flex={2}
+                jc={"center"}
+                ai={"center"}
+                style={{
+                  backgroundColor: "var(--accent)",
+                  padding: 24,
+                  borderRadius: 24,
+                  border: "4px solid var(--secondary)",
+                  boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+                }}
+              >
+                <s.TextTitle>
+                  Phase 3
+                </s.TextTitle>
+                <s.TextDescription
+                    style={{ textAlign: "center" }}
+                  >
+                    30 ETH donation to a charity of the community's choosing at 50% minted.
+                </s.TextDescription>
+              </s.Container>
+          </ResponsiveWrapper>
+          <s.SpacerMedium />
+          <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+            <s.Container
+                flex={2}
+                jc={"center"}
+                ai={"center"}
+                style={{
+                  backgroundColor: "var(--accent)",
+                  padding: 24,
+                  borderRadius: 24,
+                  border: "4px solid var(--secondary)",
+                  boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+                }}
+              >
+                <s.TextTitle>
+                Phase 4
+                </s.TextTitle>
+                <s.TextDescription
+                    style={{ textAlign: "center" }}
+                  >
+                    Another 30 ETH donation will be made to a charity of the community's choosing at 100% minted.
+                </s.TextDescription>
+              </s.Container>
+          </ResponsiveWrapper>
           
       </s.ContainerThin>
       <s.SpacerLarge />
@@ -415,7 +537,7 @@ function App() {
         >
           The Team
           </s.TextTitle>
-          <s.SpacerMedium />
+          <s.SpacerSmall />
           <s.Container flex={0} jc={"center"} ai={"center"}>
             <ProfileImg
               alt={"Empulse Twitter"}
@@ -436,7 +558,6 @@ function App() {
           </s.TextDescription>
           <s.SpacerSmall />
           <a href="https://twitter.com/empulse_nft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-circle-white.png"></img></a>
-          <s.SpacerSmall />
           
       </s.ContainerThin>
       <s.SpacerLarge />
