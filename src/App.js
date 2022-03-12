@@ -256,7 +256,7 @@ function App() {
             Home
         </s.StyledClickable>
         <s.SpacerSmall />
-        <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></Link>
+        <a href="https://etherscan.io/address/0x10e57Bd2F8627e2D95090Fb89F7D38714d110984"><img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></a>
         <s.SpacerSmall />
         <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img></Link>
         <s.SpacerSmall />
@@ -343,7 +343,7 @@ function App() {
           <s.TextDescription
             style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
-            EthLlamas NFTs are 0.04 ETH each to mint + optimized gas, with a 20 mint limit.
+            EthLlamas NFTs are 0.02 ETH each to mint + optimized gas, with a 20 mint limit.
           </s.TextDescription>
       </s.ContainerThin>
       <s.SpacerLarge />
@@ -451,7 +451,7 @@ function App() {
                 <s.TextDescription
                     style={{ textAlign: "center" }}
                   >
-                    30 ETH donation to a charity of the community's choosing at 50% minted.
+                    15 ETH donation to a charity of the community's choosing at 50% minted.
                 </s.TextDescription>
               </s.Container>
           </ResponsiveWrapper>
@@ -475,7 +475,7 @@ function App() {
                 <s.TextDescription
                     style={{ textAlign: "center" }}
                   >
-                    Another 30 ETH donation will be made to a charity of the community's choosing at 100% minted.
+                    Another 15 ETH donation will be made to a charity of the community's choosing at 100% minted.
                 </s.TextDescription>
               </s.Container>
           </ResponsiveWrapper>

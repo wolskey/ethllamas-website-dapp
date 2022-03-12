@@ -1,16 +1,16 @@
 {
-  "CONTRACT_ADDRESS": "0x35855AFFb414fc90840c3a57b40526a50Ee05003",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x35855AFFb414fc90840c3a57b40526a50Ee05003",
+  "CONTRACT_ADDRESS": "0x10e57Bd2F8627e2D95090Fb89F7D38714d110984",
+  "SCAN_LINK": "https://etherscan.io/address/0x10e57Bd2F8627e2D95090Fb89F7D38714d110984",
   "NETWORK": {
-    "NAME": "Rinkeby",
+    "NAME": "Mainnet",
     "SYMBOL": "Eth",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "EthLlamas NFT",
   "SYMBOL": "ELNFT",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 40000000000000000,
-  "DISPLAY_COST": 0.04,
+  "WEI_COST": 20000000000000000,
+  "DISPLAY_COST": 0.02,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/ethllamas",
