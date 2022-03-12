@@ -32,7 +32,7 @@ export default function ComingSoon() {
             <Link to="/">Home</Link>
         </s.StyledClickable>
         <s.SpacerSmall />
-        <a href="https://etherscan.io/address/0x10e57Bd2F8627e2D95090Fb89F7D38714d110984"><img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></a>
+        <a href="https://etherscan.io/address/0x10e57Bd2F8627e2D95090Fb89F7D38714d110984" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></a>
         <s.SpacerSmall />
         <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img></Link>
         <s.SpacerSmall />

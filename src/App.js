@@ -256,7 +256,7 @@ function App() {
             Home
         </s.StyledClickable>
         <s.SpacerSmall />
-        <a href="https://etherscan.io/address/0x10e57Bd2F8627e2D95090Fb89F7D38714d110984"><img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></a>
+        <a href="https://etherscan.io/address/0x10e57Bd2F8627e2D95090Fb89F7D38714d110984" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></a>
         <s.SpacerSmall />
         <Link to="/comingsoon"><img alt="logo" width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img></Link>
         <s.SpacerSmall />
@@ -301,7 +301,7 @@ function App() {
         <s.TextDescription
           style={{ textAlign: "center", color: "var(--primary-text)" }}
         >
-          EthLlamas is an ERC-721 NFT collection of 10,000 unique llamas living on the Ethereum blockchain.
+          EthLlamas is an ERC-721 NFT collection of 10,000 unique llamas living on the Ethereum blockchain. Our mission is to provide a fun and low cost entry into NFTs.
         </s.TextDescription>
         <s.SpacerLarge />
         <s.TextTitle
@@ -343,7 +343,7 @@ function App() {
           <s.TextDescription
             style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
-            EthLlamas NFTs are 0.02 ETH each to mint + optimized gas, with a 20 mint limit.
+            EthLlamas are 0.02 ETH each to mint + optimized gas, with a 20 mint limit.
           </s.TextDescription>
       </s.ContainerThin>
       <s.SpacerLarge />
@@ -552,7 +552,7 @@ function App() {
           <s.TextDescription
             style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
-            In giving back to the Open Source community, all code for the project will be made available on Github.
+            In giving back to the Open Source community, all code for the project is made available on Github.
             <s.SpacerSmall />
             We hope this helps other artists and developers launch their projects or allows others to contribute to EthLlamas.
           </s.TextDescription>
