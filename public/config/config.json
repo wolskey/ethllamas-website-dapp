@@ -3,7 +3,7 @@
   "SCAN_LINK": "https://etherscan.io/address/0x10e57Bd2F8627e2D95090Fb89F7D38714d110984",
   "NETWORK": {
     "NAME": "Mainnet",
-    "SYMBOL": "Eth",
+    "SYMBOL": "ETH",
     "ID": 1
   },
   "NFT_NAME": "EthLlamas NFT",

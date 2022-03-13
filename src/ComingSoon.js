@@ -28,9 +28,9 @@ export default function ComingSoon() {
             padding: 0,
             }}
         >
-        <s.StyledClickable>
-            <Link to="/">Home</Link>
-        </s.StyledClickable>
+        <Link to="/"><s.StyledClickable>Home</s.StyledClickable></Link>
+        {/* <s.SpacerSmall />
+        <Link to="/mint"><s.StyledClickable>Mint</s.StyledClickable></Link> */}
         <s.SpacerSmall />
         <a href="https://etherscan.io/address/0x10e57Bd2F8627e2D95090Fb89F7D38714d110984" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></a>
         <s.SpacerSmall />
