@@ -92,18 +92,33 @@ function App() {
             EthLlamas is an ERC-721 NFT collection of 10,000 unique llamas living on the Ethereum blockchain. Our mission is to provide a fun and low cost entry into NFTs.
           </s.TextDescription>
           <s.SpacerLarge />
-          <s.TextTitle
-          style={{
-            textAlign: "center",
-            fontSize: 40,
-            color: "var(--secondary-text)",
-          }}
-          >
-          <Countdown
-            date='2022-03-26T11:00:00-06:00'
-            renderer={renderer}
-          />
-          </s.TextTitle>
+          <s.ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+            <s.Container
+                flex={2}
+                jc={"center"}
+                ai={"center"}
+                style={{
+                  backgroundColor: "var(--accent)",
+                  padding: 24,
+                  borderRadius: 24,
+                  border: "4px solid var(--secondary)",
+                  boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+                }}
+              >
+                <s.TextTitle
+                  style={{
+                    textAlign: "center",
+                    fontSize: 40,
+                    color: "var(--secondary-text)",
+                  }}
+                  >
+                  <Countdown
+                    date='2022-03-26T11:00:00-06:00'
+                    renderer={renderer}
+                  />
+                </s.TextTitle>
+              </s.Container>
+          </s.ResponsiveWrapper>
         </s.ContainerThin>
         <s.SpacerLarge />
         <s.SpacerLarge />
@@ -143,7 +158,7 @@ function App() {
             style={{
               backgroundColor: "var(--accent)",
               borderRadius: 24,
-              border: "4px solid var(--secondary)",
+              border: "0px solid var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           />
@@ -308,7 +323,7 @@ function App() {
             <s.TextDescription
               style={{ textAlign: "center", color: "var(--primary-text)" }}
             >
-              Eric is a Site Reliability Engineer, software developer, and creator of EthLlamas.
+              Eric is a Site Reliability Engineer, Software Engineer, and creator of EthLlamas.
             </s.TextDescription>
             <s.SpacerSmall />
             <a href="https://twitter.com/empulse_nft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-circle-white.png"></img></a>
