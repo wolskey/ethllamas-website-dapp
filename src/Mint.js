@@ -156,6 +156,7 @@ function Mint() {
         ai={"center"}
         style={{
           backgroundColor: "var(--primary)",
+          width: "100%",
         }}
       >
         
@@ -169,7 +170,7 @@ function Mint() {
               backgroundColor: "var(--accent)",
               padding: 24,
               borderRadius: 24,
-              border: "4px solid var(--secondary)",
+              border: "0px solid var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
@@ -328,9 +329,6 @@ function Mint() {
         
       </s.ContainerThin>
 
-        <s.SpacerMedium />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
         <s.SpacerLarge />
 
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
@@ -369,16 +367,16 @@ function Mint() {
         </s.Container>
 
         <s.SpacerLarge />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
+
+        {/* Footer */}
+        <s.SpacerMedium />
+        <s.Container jc={"center"} ai={"center"} style={{ flexDirection: "row", width: "70%" }}>
+          <s.TextFooter style={{ textAlign: "center", color: "var(--primary-text)"}}
           >
-            Copyright © 2022 ethllamas.com
-          </s.TextDescription>
+            EthLlamas 2022 - <a href="/license" style={{ color: "var(--primary-text)"}}>License</a>
+          </s.TextFooter>
         </s.Container>
+
       </s.Container>
     </s.Screen>
   );

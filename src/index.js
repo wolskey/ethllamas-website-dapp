@@ -6,6 +6,7 @@ import store from "./redux/store";
 import App from "./App";
 import ComingSoon from "./ComingSoon";
 import Mint from "./Mint";
+import License from "./License";
 // import "./styles/reset.css";
 
 render(
@@ -13,6 +14,7 @@ render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="mint" element={<Provider store={store}><Mint /></Provider>} />
+      <Route path="license" element={<License />} />
       <Route path="comingsoon" element={<ComingSoon />} />
       <Route
         path="*"

@@ -93,6 +93,13 @@ export const TextDescription = styled.p`
   font-weight: 300;
 `;
 
+export const TextFooter = styled.p`
+  color: var(--primary-text);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+`;
+
 export const StyledClickable = styled.div`
   :active {
     opacity: 0.6;
@@ -110,7 +117,7 @@ export const StyledButton = styled.button`
   background-color: var(--primary);
   padding: 10px;
   font-weight: bold;
-  color: var(--secondary-text);
+  color: var(--primary-text);
   width: 100px;
   cursor: pointer;
   box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);

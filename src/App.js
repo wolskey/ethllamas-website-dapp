@@ -89,35 +89,35 @@ function App() {
           <s.TextDescription
             style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
-            EthLlamas is an ERC-721 NFT collection of 10,000 unique llamas living on the Ethereum blockchain. Our mission is to provide a fun and low cost entry into NFTs.
+            EthLlamas is an ERC-721 NFT collection of 10,000 unique llamas on the Ethereum blockchain. Our mission is to provide a fun and low cost entry into NFTs.
           </s.TextDescription>
           <s.SpacerLarge />
           <s.ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
             <s.Container
-                flex={2}
-                jc={"center"}
-                ai={"center"}
+              flex={2}
+              jc={"center"}
+              ai={"center"}
+              style={{
+                backgroundColor: "var(--accent)",
+                padding: 24,
+                borderRadius: 24,
+                border: "0px solid var(--secondary)",
+                boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+              }}
+            >
+              <s.TextTitle
                 style={{
-                  backgroundColor: "var(--accent)",
-                  padding: 24,
-                  borderRadius: 24,
-                  border: "4px solid var(--secondary)",
-                  boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+                  textAlign: "center",
+                  fontSize: 40,
+                  color: "var(--secondary-text)",
                 }}
               >
-                <s.TextTitle
-                  style={{
-                    textAlign: "center",
-                    fontSize: 40,
-                    color: "var(--secondary-text)",
-                  }}
-                  >
-                  <Countdown
-                    date='2022-03-26T11:00:00-06:00'
-                    renderer={renderer}
-                  />
-                </s.TextTitle>
-              </s.Container>
+                <Countdown
+                  date='2022-03-26T11:00:00-06:00'
+                  renderer={renderer}
+                />
+              </s.TextTitle>
+            </s.Container>
           </s.ResponsiveWrapper>
         </s.ContainerThin>
         <s.SpacerLarge />
@@ -195,7 +195,7 @@ function App() {
                     backgroundColor: "var(--accent)",
                     padding: 24,
                     borderRadius: 24,
-                    border: "4px solid var(--secondary)",
+                    border: "0px solid var(--secondary)",
                     boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
                   }}
                 >
@@ -219,7 +219,7 @@ function App() {
                     backgroundColor: "var(--accent)",
                     padding: 24,
                     borderRadius: 24,
-                    border: "4px solid var(--secondary)",
+                    border: "0px solid var(--secondary)",
                     boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
                   }}
                 >
@@ -244,7 +244,7 @@ function App() {
                     backgroundColor: "var(--accent)",
                     padding: 24,
                     borderRadius: 24,
-                    border: "4px solid var(--secondary)",
+                    border: "0px solid var(--secondary)",
                     boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
                   }}
                 >
@@ -268,7 +268,7 @@ function App() {
                     backgroundColor: "var(--accent)",
                     padding: 24,
                     borderRadius: 24,
-                    border: "4px solid var(--secondary)",
+                    border: "0px solid var(--secondary)",
                     boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
                   }}
                 >
@@ -325,8 +325,14 @@ function App() {
             >
               Eric is a Site Reliability Engineer, Software Engineer, and creator of EthLlamas.
             </s.TextDescription>
-            <s.SpacerSmall />
-            <a href="https://twitter.com/empulse_nft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-circle-white.png"></img></a>
+            <s.SpacerXSmall />
+            <s.Container
+              style={{ justifyContent: "center", flexDirection: "row" }}
+            >
+              <a href="https://twitter.com/empulse_nft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/twitter-logo-circle-white.png"></img></a>
+              <s.SpacerSmall />
+              <a href="http://linkedin.com/in/rackeric" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/linkedin-logo-white.png"></img></a>
+            </s.Container>
             
         </s.ContainerThin>
         <s.SpacerLarge />
@@ -334,49 +340,51 @@ function App() {
 
         {/* Open Source */}
         <s.ContainerThin
-            flex={0}
-            jc={"center"}
-            ai={"center"}
-            style={{
-              backgroundColor: "var(--primary)",
-            }}
+          flex={0}
+          jc={"center"}
+          ai={"center"}
+          style={{
+            backgroundColor: "var(--primary)",
+          }}
+        >
+        <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 50,
+            fontWeight: "bold",
+            color: "var(--primary-text)",
+          }}
+        >
+          Open Source
+          </s.TextTitle>
+          <s.SpacerSmall />
+          <s.TextDescription
+            style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
-          <s.TextTitle
-            style={{
-              textAlign: "center",
-              fontSize: 50,
-              fontWeight: "bold",
-              color: "var(--primary-text)",
-            }}
+            In giving back to the Open Source community, all code for the project is made available on Github.
+          </s.TextDescription>
+          <s.SpacerSmall />
+          <s.TextDescription
+            style={{ textAlign: "center", color: "var(--primary-text)" }}
           >
-            Open Source
-            </s.TextTitle>
-            <s.SpacerSmall />
-            <s.TextDescription
-              style={{ textAlign: "center", color: "var(--primary-text)" }}
-            >
-              In giving back to the Open Source community, all code for the project is made available on Github.
-            </s.TextDescription>
-            <s.SpacerSmall />
-            <s.TextDescription
-              style={{ textAlign: "center", color: "var(--primary-text)" }}
-            >
-              We hope this helps other artists and developers launch their projects or allows others to contribute to EthLlamas.
-            </s.TextDescription>
-            <s.SpacerSmall />
-            <a href="https://github.com/ethllamasnft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/github-logo-white.png"></img></a>
-            
+            We hope this helps other artists and developers launch their projects or allows others to contribute to EthLlamas.
+          </s.TextDescription>
+          <s.SpacerSmall />
+          <a href="https://github.com/ethllamasnft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="50" heigth="50" src="/config/images/github-logo-white.png"></img></a>
+          
         </s.ContainerThin>
         <s.SpacerLarge />
         <s.SpacerLarge />
 
+        {/* Footer */}
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription style={{ textAlign: "center", color: "var(--primary-text)"}}
+        <s.Container jc={"center"} ai={"center"} style={{ flexDirection: "row", width: "70%" }}>
+          <s.TextFooter style={{ textAlign: "center", color: "var(--primary-text)"}}
           >
-            Copyright © 2022 ethllamas.com
-          </s.TextDescription>
+            EthLlamas 2022 - <a href="/license" style={{ color: "var(--primary-text)"}}>License</a>
+          </s.TextFooter>
         </s.Container>
+
       </s.Container>
     </s.Screen>
   );

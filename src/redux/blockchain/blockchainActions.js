@@ -3,6 +3,10 @@ import Web3EthContract from "web3-eth-contract";
 import Web3 from "web3";
 // log
 import { fetchData } from "../data/dataActions";
+// Metamask onboarding
+import MetaMaskOnboarding from '@metamask/onboarding';
+
+const onboarding = new MetaMaskOnboarding();
 
 const connectRequest = () => {
   return {
@@ -88,7 +92,8 @@ export const connect = () => {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
-      dispatch(connectFailed("Install Metamask."));
+      dispatch(connectFailed("Install Metamask and refresh page."));
+      onboarding.startOnboarding();
     }
   };
 };
