@@ -135,7 +135,7 @@ export default function License() {
         <s.Container jc={"center"} ai={"center"} style={{ flexDirection: "row", width: "70%" }}>
           <s.TextFooter style={{ textAlign: "center", color: "var(--primary-text)"}}
           >
-            EthLlamas 2022 - <a href="/license" style={{ color: "var(--primary-text)"}}>License</a>
+            EthLlamas 2022 - <a href="/license" style={{ color: "var(--primary-text)"}}>License</a> - <a href="ETHLLAMAS_Audit_Passed.pdf" style={{ color: "var(--primary-text)"}}>Audit</a>
           </s.TextFooter>
         </s.Container>
 
