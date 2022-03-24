@@ -367,10 +367,13 @@ function Mint() {
         </s.Container>
 
         <s.SpacerLarge />
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        <s.SpacerLarge />
 
         {/* Footer */}
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ flexDirection: "row", width: "70%" }}>
+        <s.Container jc={"center"} ai={"center"} style={{ flexGrow: "1", flexDirection: "row", width: "70%" }}>
           <s.TextFooter style={{ textAlign: "center", color: "var(--primary-text)"}}
           >
             EthLlamas 2022 - <a href="/license" style={{ color: "var(--primary-text)"}}>License</a>

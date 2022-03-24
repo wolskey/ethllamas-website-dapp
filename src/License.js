@@ -45,23 +45,25 @@ export default function License() {
         <s.SpacerLarge />
         <s.SpacerLarge />
 
-        <s.ContainerThin
-          flex={0}
+        <s.TextTitle
           jc={"center"}
           ai={"center"}
           style={{
-            backgroundColor: "var(--primary)",
+            textAlign: "center",
+            fontSize: 50,
+            color: "var(--primary-text)",
           }}
         >
-          <s.TextTitle
-            style={{
-              textAlign: "center",
-              fontSize: 50,
-              color: "var(--primary-text)",
-            }}
-          >
-            NFT License
-          </s.TextTitle>
+          NFT License
+        </s.TextTitle>
+
+        <s.ContainerThin
+          flex={0}
+          style={{
+            backgroundColor: "var(--primary)",
+            maxWidth: "600px",
+          }}
+        >
           
           <s.TextDescription
             style={{ color: "var(--primary-text)" }}
