@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
 import Countdown from 'react-countdown';
 import * as s from "./styles/globalStyles";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 function App() {
   
@@ -33,27 +34,7 @@ function App() {
       >
 
         {/* NavBar */}          
-        <s.ContainerNav
-          style={{
-            padding: 0,
-          }}
-        >
-          <s.StyledClickable>
-              Home
-          </s.StyledClickable>
-          {/* <s.SpacerSmall />
-          <Link to="/mint"><s.StyledClickable>Mint</s.StyledClickable></Link> */}
-          <s.SpacerSmall />
-          <a href="https://discord.gg/4z7thT8RSd" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/discord-logo-white.png"></img></a>
-          <s.SpacerSmall />
-          <a href="https://twitter.com/EthLlamas_NFT" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/twitter-logo-circle-white.png"></img></a>
-          <s.SpacerSmall />
-          <a href="https://github.com/ethllamasnft" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/github-logo-white.png"></img></a>
-          <s.SpacerSmall />
-          <a href="https://etherscan.io/address/0x10e57Bd2F8627e2D95090Fb89F7D38714d110984" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/etherscan-logo-white.png"></img></a>
-          <s.SpacerSmall />
-          <a href="https://opensea.io/collection/ethllamas" target="_blank" rel="noopener noreferrer"><img alt="logo" width="28" heigth="28" src="/config/images/opensea-logo-white.png"></img></a>
-        </s.ContainerNav>
+        <Navbar />
         <s.SpacerLarge />
         <s.SpacerLarge />
             
@@ -378,12 +359,7 @@ function App() {
 
         {/* Footer */}
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ flexDirection: "row", width: "70%" }}>
-          <s.TextFooter style={{ textAlign: "center", color: "var(--primary-text)"}}
-          >
-            EthLlamas 2022 - <a href="/license" style={{ color: "var(--primary-text)"}}>License</a> - <a href="ETHLLAMAS_Audit_Passed.pdf" style={{ color: "var(--primary-text)"}}>Audit</a>
-          </s.TextFooter>
-        </s.Container>
+        <Footer />
 
       </s.Container>
     </s.Screen>
