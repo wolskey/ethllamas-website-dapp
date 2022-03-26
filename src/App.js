@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Countdown from 'react-countdown';
 import * as s from "./styles/globalStyles";
 import Footer from "./Footer";
@@ -11,7 +12,7 @@ function App() {
   });
 
   // For countdown timer
-  const Completionist = () => <span>Mint is preparing to go live!</span>;
+  const Completionist = () => <span><Link to="/mint">Mint is now live!</Link></span>;
 
   // Renderer callback with condition
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
