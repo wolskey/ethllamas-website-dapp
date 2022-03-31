@@ -314,6 +314,17 @@ function Mint() {
 
         <s.SpacerLarge />
 
+        {/* Lower 4x4 Image */}
+        <s.Container
+          ai={"center"}
+        >
+          <a href={CONFIG.MARKETPLACE_LINK}>
+            <s.StyledLogo alt={"logo"} src={"/config/images/ethllamas_nft_4x4_20220328.png"} />
+          </a>
+        </s.Container>
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
           <s.TextDescription
             style={{
@@ -351,11 +362,8 @@ function Mint() {
 
         <s.SpacerLarge />
         <s.SpacerLarge />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
 
         {/* Footer */}
-        <s.SpacerMedium />
         <Footer />
 
       </s.Container>
