@@ -4,8 +4,8 @@ import React from 'react';
 import {Provider} from 'react-redux'
 import store from "./redux/store";
 import App from "./App";
-import ComingSoon from "./ComingSoon";
-import Mint from "./Mint";
+// import ComingSoon from "./ComingSoon";
+// import Mint from "./Mint";
 import License from "./License";
 // import "./styles/reset.css";
 
