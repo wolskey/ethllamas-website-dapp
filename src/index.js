@@ -12,10 +12,10 @@ import License from "./License";
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="mint" element={<Provider store={store}><Mint /></Provider>} />
+      <Route path="/" element={<Provider store={store}><App /></Provider>} />
+      {/* <Route path="mint" element={<Provider store={store}><Mint /></Provider>} /> */}
       <Route path="license" element={<License />} />
-      <Route path="comingsoon" element={<ComingSoon />} />
+      {/* <Route path="comingsoon" element={<ComingSoon />} /> */}
       <Route
         path="*"
         element={
