@@ -49,7 +49,7 @@ function Mint() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(payableAmount * (10**18), mintAmount)
+      .mint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -112,6 +112,8 @@ function Mint() {
     getData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blockchain.account]);
+
+  let payableAmountText = data.totalSupply > 3000 ? 0 : 0.005;
 
   return (
     <s.Screen>
@@ -234,7 +236,7 @@ function Mint() {
                   <s.TextTitle
                     style={{ textAlign: "center", color: "var(--accent-text)" }}
                   >
-                    1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                    1 {CONFIG.SYMBOL} costs {payableAmountText}{" "}
                     {CONFIG.NETWORK.SYMBOL}
                   </s.TextTitle>
                   <s.SpacerSmall />
