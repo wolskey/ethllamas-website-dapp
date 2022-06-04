@@ -133,35 +133,6 @@ function App() {
           </a>
         </s.Container>
         <s.SpacerSmall />
-
-        {/* Welcome */}
-        <s.ContainerThin
-            flex={0}
-            jc={"center"}
-            ai={"center"}
-            style={{
-              backgroundColor: "var(--primary)",
-            }}
-          >
-          <s.TextTitle
-            style={{
-              textAlign: "center",
-              fontSize: 50,
-              color: "var(--primary-text)",
-            }}
-          >
-            Welcome to EthLlamas
-          </s.TextTitle>
-          <s.SpacerSmall />
-          <s.TextDescription
-            style={{ textAlign: "center", color: "var(--primary-text)" }}
-          >
-            EthLlamas is an ERC-721 NFT collection of 10,000 unique llamas on the Ethereum blockchain. Our mission is to provide a fun and low cost entry into NFTs.
-          </s.TextDescription>
-        </s.ContainerThin>
-        <s.SpacerLarge />
-        <s.SpacerLarge />
-
         {/* Mint */}
         <s.ContainerThin
             flex={0}
