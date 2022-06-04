@@ -69,6 +69,7 @@ function App() {
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
       });
+      print("dupa");
   };
 
   const decrementMintAmount = () => {
