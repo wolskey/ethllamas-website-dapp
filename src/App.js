@@ -244,9 +244,12 @@ function App() {
                           color: "var(--accent-text)",
                         }}
                       >
-                        Connect to the {CONFIG.NETWORK.NAME} network
+                        Mint will start on 16:30:00 UTC
                       </s.TextDescription>
                       <s.SpacerSmall />
+
+
+
                       <s.StyledButton
                         onClick={(e) => {
                           e.preventDefault();
@@ -271,7 +274,7 @@ function App() {
                       ) : null}
                     </s.Container>
                   ) : (
-                    <>
+                    {/*<>
                       <s.TextDescription
                         style={{
                           textAlign: "center",
@@ -325,7 +328,7 @@ function App() {
                           {claimingNft ? "BUSY" : "BUY"}
                         </s.StyledButton>
                       </s.Container>
-                    </>
+                    </>*/}
                   )}
                 </>
               )}
