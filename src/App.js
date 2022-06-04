@@ -39,10 +39,10 @@ function App() {
   const claimNFTs = () => {
 
     // set wei cost
-    let payableAmount = data.totalSupply > 3000 ? 0 : 0.005;
+    let payableAmount = data.totalSupply > 3000 ? 0 : 5000000000000000;
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
-    let totalCostWei = String(cost * mintAmount);
+    let totalCostWei = String(payableAmount * mintAmount);
     let totalGasLimit = String(gasLimit);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
