@@ -46,7 +46,7 @@ function App() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .safeMint(mintAmount)
+      .mint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -274,7 +274,7 @@ function App() {
                       ) : null}
                     </s.Container>
                   ) : (
-                    {/*<>
+                    {<>
                       <s.TextDescription
                         style={{
                           textAlign: "center",
