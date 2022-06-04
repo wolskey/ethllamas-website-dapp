@@ -1,5 +1,5 @@
 # Vampirestown.nft
-Official website and minting dapp of EVampirestown.wtf
+Official website and minting dapp of sVampirestown.wtf
 npm run start
 ```
 

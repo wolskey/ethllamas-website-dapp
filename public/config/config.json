@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0x1e3a7efad7db1dc0451d92a9433424d96445080a",
+  "CONTRACT_ADDRESS": "0x1E3A7efAD7db1dc0451d92A9433424D96445080a",
   "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xae154ac27ed97e32f8ae1276a22f465cde3c3c45",
   "NETWORK": {
-    "NAME": "Rinkeby",
+    "NAME": "mainnet",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "Vampirestown.wtf",
   "SYMBOL": "VAMPIRE",
