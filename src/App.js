@@ -138,9 +138,6 @@ function App() {
             flex={0}
             jc={"center"}
             ai={"center"}
-            style={{
-              backgroundColor: "var(--primary)",
-            }}
           >
           <s.TextTitle
             style={{
