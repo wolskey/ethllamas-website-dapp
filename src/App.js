@@ -192,8 +192,8 @@ function App() {
 
             <s.Container flex={0} jc={"center"} ai={"center"}>
               <s.StyledImg
-                alt={"EthLlamas"}
-                src={"/config/images/ethllamas.gif"}
+                alt={"Vampirestown.wtf"}
+                src={"/config/images/example.gif"}
                 border="0"
                 style={{
                   backgroundColor: "var(--accent)",
