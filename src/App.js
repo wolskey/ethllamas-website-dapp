@@ -113,7 +113,7 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blockchain.account]);
 
-  let payableAmountText = data.totalSupply > 3000 ? 0 : 0.005;
+  let payableAmountText = data.totalSupply < 3000 ? 0 : 0.005;
 
   return (
     <s.Screen>
