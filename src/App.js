@@ -81,8 +81,10 @@ function App() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 50) {
-      newMintAmount = 50;
+    let payableAmount = data.totalSupply < 3000 ? 2 : 10;
+
+    if (newMintAmount > payableAmount) {
+      newMintAmount = payableAmount;
     }
     setMintAmount(newMintAmount);
   };
