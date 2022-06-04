@@ -45,12 +45,12 @@ function Mint() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .safeMint(mintAmount)
+      .mint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
         from: blockchain.account,
-        value: totalCostWei,
+        value: totalCostWei, //add free mint button after checking state
       })
       .once("error", (err) => {
         console.log(err);
@@ -77,10 +77,10 @@ function Mint() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 50) {
-      newMintAmount = 50;
+    if (newMintAmount > 2) {
+      newMintAmount = 2;
     }
-    setMintAmount(newMintAmount);
+    setMintAmount(newMintAmount); // if free mint change max mint amount
   };
 
   const getData = () => {

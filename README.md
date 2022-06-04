@@ -1,6 +1,5 @@
-# EthLlamas NFT
-Official website and minting dapp of EthLlamas NFT. Hosted at https://ethllamas.com
-```sh
+# Vampirestown.nft
+Official website and minting dapp of EVampirestown.wtf
 npm run start
 ```
 
