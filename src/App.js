@@ -113,6 +113,8 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blockchain.account]);
 
+  let payableAmountText = data.totalSupply > 3000 ? 0 : 0.005;
+
   return (
     <s.Screen>
       <s.Container
@@ -234,7 +236,7 @@ function App() {
                   <s.TextTitle
                     style={{ textAlign: "center", color: "var(--accent-text)" }}
                   >
-                    1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                    1 {CONFIG.SYMBOL} costs {payableAmountText}{" "}
                     {CONFIG.NETWORK.SYMBOL}
                   </s.TextTitle>
                   <s.SpacerSmall />
