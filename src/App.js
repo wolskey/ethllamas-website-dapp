@@ -81,7 +81,7 @@ function App() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    let payableAmount = data.totalSupply < 3000 ? 2 : 10;
+    let payableAmount = data.totalSupply < 3000 ? 2 : 10; // this logic could be smarter
 
     if (newMintAmount > payableAmount) {
       newMintAmount = payableAmount;
@@ -347,6 +347,9 @@ function App() {
                     fontSize: 13,
                   }}
                 >
+                  First 3000 NFTs are free to mint and limited 2 per wallet. After that cost is 0.005ETH and limit is increased to 10 per wallet.
+                  Team will mint no more than 666 tokens.
+
                   Metamask is the recommended crypto wallet. Other wallets can use internal web browsers on their mobile app.
                 </s.TextDescription>
               </s.Container>

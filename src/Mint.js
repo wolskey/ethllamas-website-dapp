@@ -347,6 +347,9 @@ function Mint() {
                     fontSize: 13,
                   }}
                 >
+                  First 3000 NFTs are free to mint and limited 2 per wallet. After that cost is 0.005ETH and limit is increased to 10 per wallet.
+                  Team will mint no more than 666 tokens.
+
                   Metamask is the recommended crypto wallet. Other wallets can use internal web browsers on their mobile app.
                 </s.TextDescription>
               </s.Container>

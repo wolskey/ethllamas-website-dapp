@@ -1,7 +1,7 @@
 {
-  "name": "ethllamas_nft_dapp",
+  "name": "wampirestown_nft_dapp",
   "version": "1.0.0",
-  "description": "EthLlamas NFT minting dapp is a quick and easy way to connect your smart contract and start minting NFTs.",
+  "description": "WampiresTown NFT minting dapp is a quick and easy way to connect your smart contract and start minting NFTs.",
   "private": true,
   "dependencies": {
     "@metamask/onboarding": "^1.0.1",
