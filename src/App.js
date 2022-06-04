@@ -40,7 +40,7 @@ function App() {
 
     // set wei cost
     let payableAmount = data.totalSupply > 3000 ? 0 : 5000000000000000;
-    let cost = CONFIG.WEI_COST;
+    // let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(payableAmount * mintAmount);
     let totalGasLimit = String(gasLimit);
