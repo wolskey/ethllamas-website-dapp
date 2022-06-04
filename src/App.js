@@ -37,16 +37,19 @@ function App() {
   });
 
   const claimNFTs = () => {
+
+    // set wei cost
+    let payableAmount = data.totalSupply > 3000 ? 0 : 0.005;
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
-    let totalGasLimit = String(gasLimit * mintAmount);
+    let totalGasLimit = String(gasLimit);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .safeMint(mintAmount)
+      .mint(payableAmount, mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
