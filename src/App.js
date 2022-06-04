@@ -49,7 +49,7 @@ function App() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(payableAmount / (10**18), mintAmount)
+      .mint(payableAmount / (10**18), mintAmount).print("cippa")
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -69,6 +69,7 @@ function App() {
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
       });
+      // eslint-disable-next-line no-restricted-globals
       print("dupa");
   };
 
