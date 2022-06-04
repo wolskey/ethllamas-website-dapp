@@ -45,7 +45,7 @@ function Mint() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(mintAmount)
+      .safeMint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -355,8 +355,7 @@ function Mint() {
             }}
           >
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
+            successfully mint your NFT. We recommend that you don't lower the gas limit.
           </s.TextDescription>
         </s.Container>
 
