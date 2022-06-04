@@ -2,17 +2,17 @@
   "CONTRACT_ADDRESS": "0x10e57Bd2F8627e2D95090Fb89F7D38714d110984",
   "SCAN_LINK": "https://etherscan.io/address/0x10e57Bd2F8627e2D95090Fb89F7D38714d110984",
   "NETWORK": {
-    "NAME": "Mainnet",
+    "NAME": "Rinkeby",
     "SYMBOL": "ETH",
-    "ID": 1
+    "ID": 4
   },
   "NFT_NAME": "EthLlamas NFT",
   "SYMBOL": "ELNFT",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 0,
-  "DISPLAY_COST": 0,
+  "WEI_COST": 5000000000000000,
+  "DISPLAY_COST": 0.005,
   "GAS_LIMIT": 285000,
-  "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/ethllamas",
+  "MARKETPLACE": "Opensea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/vampirestown.wtf",
   "SHOW_BACKGROUND": true
 }
