@@ -6,9 +6,9 @@
     "SYMBOL": "ETH",
     "ID": 4
   },
-  "NFT_NAME": "EthLlamas NFT",
-  "SYMBOL": "ELNFT",
-  "MAX_SUPPLY": 10000,
+  "NFT_NAME": "Vampirestown.wtf",
+  "SYMBOL": "VAMPIRE",
+  "MAX_SUPPLY": 6666,
   "WEI_COST": 5000000000000000,
   "DISPLAY_COST": 0.005,
   "GAS_LIMIT": 285000,
